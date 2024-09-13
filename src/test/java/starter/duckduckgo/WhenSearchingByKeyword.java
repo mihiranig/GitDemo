@@ -24,8 +24,11 @@ class WhenSearchingByKeyword {
         navigate.toTheDuckDuckGoSearchPage();
         search.byKeyword("Cucumber");
         //assertThat(searchResultSidebar.heading()).isEqualTo("Cucumber");
-
+        System.out.println("test");
+        System.out.println("test2");
         Serenity.reportThat("The keyword should appear in the sidebar heading",
                 () -> assertThat(searchResultSidebar.heading()).isEqualTo("Cucumber"));
+
+
     }
 }
